@@ -150,9 +150,9 @@ aseq_##_name_: aseq_##_name_ {\
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  PERCENT  &kp  KP_N1    &kp  KP_N2    &kp  KP_N3    &kp  KP_N4    &kp  KP_N5                                                                     &kp   KP_N6   &kp  KP_N7    &kp  KP_N8    &kp  KP_N9    &kp  KP_N0    &kp CARET
-&kp  KP_MINUS &kp  KP_LPAR  &kp  KP_RPAR  &kp  LBKT     &kp  RBKT     &kp  KP_PLUS                                                                   &kp  UNDER    &kp  LBRC     &kp  RBRC     &kp  LT       &kp  GT       &kp EQUAL
-&kp KP_ASTERISK &kp DOLLAR  &kp  AMPS     &kp  SEMI     &kp  NUBS     &kp  DQT                                                                       &kp  SQT      &kp  KP_SLASH &kp  COLON    &kp  NUHS     &kp  AT       &kp EXCL
+&kp  PERCENT  &kp  KP_N1    &kp  KP_N2    &kp  KP_N3    &kp  KP_N4    &kp  KP_N5                                                                     &kp   KP_N6   &kp  KP_N7    &kp  KP_N8    &kp  KP_N9    &kp  KP_N0    &aseq_caret
+&kp  KP_MINUS &kp  KP_LPAR  &kp  KP_RPAR  &aseq_lbkt    &aseq_rbkt    &kp  KP_PLUS                                                                   &kp  UNDER    &aseq_lbrc    &aseq_rbrc    &aseq_lt      &aseq_gt      &kp EQUAL
+&kp KP_ASTERISK &aseq_dllr  &aseq_amps    &aseq_semi    &aseq_bslh     &aseq_dqt                                                                      &aseq_sqt    &kp  KP_SLASH &aseq_colon   &aseq_hash    &aseq_at      &kp EXCL
 
 /*
  *&kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp DEL
