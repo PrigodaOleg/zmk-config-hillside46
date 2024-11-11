@@ -27,7 +27,7 @@
            _1_,\
            _2_,\
            _3_)\
-_name_: aseq_##_name_ {\
+aseq_##_name_: aseq_##_name_ {\
     compatible = "zmk,behavior-macro";\
     #binding-cells = <0>;\
     wait-ms = <10>;\
