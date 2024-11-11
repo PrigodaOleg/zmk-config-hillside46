@@ -23,6 +23,48 @@
 #define Paste  LC(V)
 #define Redo   LC(Y)
 
+#define AS(_name_,\
+           _1_,\
+           _2_,\
+           _3_)\
+_name_: aseq_##_name_ {\
+    compatible = "zmk,behavior-macro";\
+    #binding-cells = <0>;\
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings\
+        = <&macro_press &kp LSHFT>\
+        , <&macro_tap &kp _1_ &kp _2_ &kp _3_>\
+        , <&macro_release &kp LSHFT>;\
+};
+/ {
+    macros {
+        AS(qmark, 0,6,3) // ?
+        AS(dot, 0,4,6) // .
+        AS(lbkt, 0,9,1) // [
+        AS(rbkt, 0,9,3) // ]
+        AS(caret, 0,9,4) // ^
+        AS(lbrc, 1,2,3) // {
+        AS(rbrc, 1,2,5) // }
+        AS(lt, 0,6,0) // <
+        AS(gt, 0,6,2) // >
+        AS(dllr, 0,3,6) // $
+        AS(amos, 0,3,8) // &
+        AS(semi, 0,5,9) // ;
+        AS(bslh, 0,9,2) // \
+        AS(dqt, 0,3,4) // "
+        AS(sqt, 0,3,9) // '
+        AS(fslh, 0,4,7) // /
+        AS(colon, 0,5,8) // :
+        AS(hash, 0,3,5) // #
+        AS(at, 0,6,4) // @
+        AS(nom, 2,5,2) // №
+        AS(grave, 0,9,6) // `
+        AS(tilde, 1,2,6) // ~
+        AS(pipe, 1,2,4) // |
+    };
+};
+
 
 / {
         keymap {
@@ -40,7 +82,7 @@
                         bindings = <
 &kp  GRAVE    &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  LBKT
 &kp  RBKT     &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  APOS  
-&kp  KP_DOT   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LGUI                                          &kp LALT      &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  QMARK    &kp  KP_DOT
+&kp  KP_DOT   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LGUI                                          &kp LALT      &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &aseq_qmark   &aseq_dot
                                                         &mo  NAV_L    &kp  LCTRL    &kp  BSPC    &kp  DEL                &kp  ENTER    &kp  SPACE    &kp  LSHIFT   &mo  SYM_L
                         >;
 			
