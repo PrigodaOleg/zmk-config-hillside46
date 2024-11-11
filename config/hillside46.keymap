@@ -51,7 +51,7 @@ aseq_##_name_: aseq_##_name_ {\
         AS(lt, 0,6,0) /* < */
         AS(gt, 0,6,2) /* > */
         AS(dllr, 0,3,6) /* $ */
-        AS(amos, 0,3,8) /* & */
+        AS(amps, 0,3,8) /* & */
         AS(semi, 0,5,9) /* ; */
         AS(bslh, 0,9,2) /* \ */
         AS(dqt, 0,3,4) /* " */
