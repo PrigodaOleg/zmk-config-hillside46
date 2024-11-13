@@ -34,7 +34,7 @@ aseq_##_name_: aseq_##_name_ {\
     tap-ms = <10>;\
     bindings\
         = <&macro_press &kp LSHFT>\
-        , <&macro_tap &kp _1_ &kp _2_ &kp _3_>\
+        , <&macro_tap &kp KP_N##_1_ &kp KP_N##_2_ &kp KP_N##_3_>\
         , <&macro_release &kp LSHFT>;\
 };
 
