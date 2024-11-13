@@ -43,6 +43,7 @@ aseq_##_name_: aseq_##_name_ {\
     macros {
         AS(qmark, 0,6,3) /* ? */
         AS(dot, 0,4,6) /* . */
+        AS(comma, 0,4,4) /* , */
         AS(lbkt, 0,9,1) /* [ */
         AS(rbkt, 0,9,3) /* ] */
         AS(caret, 0,9,4) /* ^ */
@@ -80,7 +81,7 @@ aseq_##_name_: aseq_##_name_ {\
                         bindings = <
 &kp  GRAVE    &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  LBKT
 &kp  RBKT     &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  APOS  
-&kp  KP_DOT   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LGUI                                          &kp LALT      &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &aseq_qmark   &aseq_dot
+&aseq_comma   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LGUI                                          &kp LALT      &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &aseq_qmark   &aseq_dot
                                                         &mo  NAV_L    &kp  LCTRL    &kp  BSPC    &kp  DEL                &kp  ENTER    &kp  SPACE    &kp  LSHIFT   &mo  SYM_L
                         >;
 			
@@ -151,13 +152,13 @@ aseq_##_name_: aseq_##_name_ {\
  */
                         bindings = <
 &kp  PERCENT  &kp  KP_N1    &kp  KP_N2    &kp  KP_N3    &kp  KP_N4    &kp  KP_N5                                                                     &kp   KP_N6   &kp  KP_N7    &kp  KP_N8    &kp  KP_N9    &kp  KP_N0    &aseq_caret
-&kp  KP_MINUS &kp  KP_LPAR  &kp  KP_RPAR  &aseq_lbkt    &aseq_rbkt    &kp  KP_PLUS                                                                   &kp  UNDER    &aseq_lbrc    &aseq_rbrc    &aseq_lt      &aseq_gt      &kp EQUAL
-&kp KP_ASTERISK &aseq_dllr  &aseq_amps    &aseq_semi    &aseq_bslh     &aseq_dqt                                                                      &aseq_sqt    &kp  KP_SLASH &aseq_colon   &aseq_hash    &aseq_at      &kp EXCL
+&kp  KP_MINUS &kp  LPAR     &kp  RPAR     &aseq_lbkt    &aseq_rbkt    &kp  KP_PLUS                                                                   &kp  UNDER    &aseq_lbrc    &aseq_rbrc    &aseq_lt      &aseq_gt      &kp EQUAL
+&kp KP_ASTERISK &aseq_dllr  &aseq_amps    &aseq_semi    &aseq_bslh     &aseq_dqt     &kp  TAB                                           &kp RALT     &aseq_sqt    &kp  KP_SLASH &aseq_colon   &aseq_hash    &aseq_at      &kp EXCL
 
 /*
  *&kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp DEL
  *&none         &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp  HOME     &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp END
- *&trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
+ *&trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &trans                                             &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
  */                                                       &mo  ADJ_L    &trans        &trans        &trans                  &trans       &trans        &trans        &trans
                         >;
 			
