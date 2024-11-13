@@ -30,12 +30,12 @@
 aseq_##_name_: aseq_##_name_ {\
     compatible = "zmk,behavior-macro";\
     #binding-cells = <0>;\
-    wait-ms = <40>;\
-    tap-ms = <40>;\
+    wait-ms = <10>;\
+    tap-ms = <10>;\
     bindings\
-        = <&macro_press &kp LSHFT>\
+        = <&macro_press &kp LALT>\
         , <&macro_tap &kp KP_N##_1_ &kp KP_N##_2_ &kp KP_N##_3_>\
-        , <&macro_release &kp LSHFT>;\
+        , <&macro_release &kp LALT>;\
 };
 
 
