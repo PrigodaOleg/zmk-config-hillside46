@@ -82,7 +82,7 @@ aseq_##_name_: aseq_##_name_ {\
 &kp  GRAVE    &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  LBKT
 &kp  RBKT     &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  APOS  
 &aseq_comma   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LGUI                                          &kp LALT      &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &aseq_qmark   &aseq_dot
-                                                        &mo  NAV_L    &kp  LCTRL    &kp  BSPC    &kp  DEL                &kp  ENTER    &kp  SPACE    &kp  LSHIFT   &mo  SYM_L
+                                                        &mo  NAV_L    &kp  LCTRL    &kp  LALT    &kp BSPC                &kp  ENTER    &kp  SPACE    &kp  LSHIFT   &mo  SYM_L
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -133,8 +133,8 @@ aseq_##_name_: aseq_##_name_ {\
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
  */
                         bindings = <
-&kp  PERCENT  &kp  KP_N1    &kp  KP_N2    &kp  KP_N3    &kp  KP_N4    &kp  KP_N5                                                                     &kp   KP_N6   &kp  KP_N7   &kp   KP_N8   &kp   KP_N9   &kp  KP_N0    &kp CARET
-&kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                     &kp   PG_UP   &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PG_DN
+&kp  ESC      &kp  KP_N1    &kp  KP_N2    &kp  KP_N3    &kp  KP_N4    &kp  KP_N5                                                                     &kp   KP_N6   &kp  KP_N7   &kp   KP_N8   &kp   KP_N9   &kp  KP_N0    &kp DEL
+&kp  Cut      &kp  LGUI     &kp  LGUI     &kp  HOME     &kp  END      &kp  Paste                                                                     &kp   PG_UP   &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PG_DN
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &kp RCTRL
                                                         &trans        &trans        &trans        &trans                 &trans        &trans        &trans    &mo ADJ_L
                         >;
@@ -151,9 +151,9 @@ aseq_##_name_: aseq_##_name_ {\
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  PERCENT  &kp  KP_N1    &kp  KP_N2    &kp  KP_N3    &kp  KP_N4    &kp  KP_N5                                                                     &kp   KP_N6   &kp  KP_N7    &kp  KP_N8    &kp  KP_N9    &kp  KP_N0    &aseq_caret
+&kp  PERCENT  &kp  S        &kp  LSHFT    &kp  LGUI     &kp  TAB      &kp  SPACE                                                                     &kp   ENTER   &kp  TAB      &kp  RGUI     &kp  RSHFT    &kp  KP_N0    &aseq_caret
 &kp  KP_MINUS &kp  LPAR     &kp  RPAR     &aseq_lbkt    &aseq_rbkt    &kp  KP_PLUS                                                                   &kp  UNDER    &aseq_lbrc    &aseq_rbrc    &aseq_lt      &aseq_gt      &kp EQUAL
-&kp KP_ASTERISK &aseq_dllr  &aseq_amps    &aseq_semi    &aseq_bslh     &aseq_dqt     &kp  TAB                                           &kp RALT     &aseq_sqt    &kp  KP_SLASH &aseq_colon   &aseq_hash    &aseq_at      &kp EXCL
+&kp KP_ASTERISK &aseq_dllr  &aseq_amps    &aseq_semi    &aseq_bslh     &aseq_dqt     &kp  TAB                                           &kp RALT     &aseq_sqt     &kp  KP_SLASH &aseq_colon   &aseq_hash    &aseq_at      &kp EXCL
 
 /*
  *&kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp DEL
